@@ -2,7 +2,7 @@
 
 **Matthew Tunes** é uma aplicação web de música com um design *Dark Mode* premium e moderno, inspirado nas principais plataformas de streaming do mercado. Construída em React, a aplicação consome a API oficial do iTunes para buscar artistas, listar álbuns e reproduzir prévias de músicas.
 
-🔗 **[Acesse o projeto online aqui]** *(Insira o link da Vercel aqui depois do deploy)*
+🔗 *(https://agent-6a0ff59da011203c--gleaming-rugelach-7b25df.netlify.app)*
 
 ---
 
