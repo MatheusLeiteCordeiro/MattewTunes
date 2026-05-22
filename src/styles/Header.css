@@ -1,0 +1,101 @@
+/* Container principal do Header */
+.header-component.dark-mode {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1c1c1e;
+  padding: 16px 48px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #ffffff;
+  position: relative;
+  z-index: 10; /* Garante que fique sobre o conteúdo */
+}
+
+.loading-header {
+  justify-content: center;
+  padding: 24px 48px;
+}
+
+/* Navegação (Links da Esquerda) */
+.header-nav {
+  display: flex;
+  gap: 32px;
+}
+
+.header-link {
+  text-decoration: none;
+  color: rgba(235, 235, 245, 0.6);
+  font-size: 16px;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.header-link:hover {
+  color: #ffffff;
+}
+
+/* NOVO: Estilo do Link Wrapper da área do usuário */
+.header-user-link-wrapper {
+  text-decoration: none; /* Remove sublinhado padrão de link */
+  color: inherit; /* Mantém a cor do texto */
+  transition: transform 0.1s ease; /* Efeito de clique sutil */
+}
+
+.header-user-link-wrapper:hover {
+  transform: scale(1.02); /* Dá um zoom leve ao passar o mouse */
+}
+
+/* Área do Usuário (Container interno) */
+.header-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #2c2c2e;
+  padding: 6px 16px 6px 6px; /* Ajuste sutil de padding */
+  border-radius: 30px;
+  transition: background-color 0.2s ease;
+}
+
+/* Efeito de hover no fundo do container */
+.header-user-link-wrapper:hover .header-user {
+  background-color: #3a3a3c;
+}
+
+/* Container do Avatar (Círculo) */
+.avatar-container {
+  width: 36px; /* Aumentei um pouquinho para destacar a foto */
+  height: 36px;
+  border-radius: 50%;
+  overflow: hidden; /* Garante que a imagem não saia do círculo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* NOVO: Estilo para a IMAGEM real do usuário */
+.user-avatar-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cobre todo o espaço sem distorcer, cortando as bordas se necessário */
+}
+
+/* Estilo para o PLACEHOLDER (o gradiente antigo) */
+.user-avatar-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #fa243c 0%, #ff5e3a 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.user-name {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+}
